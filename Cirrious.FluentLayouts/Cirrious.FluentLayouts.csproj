@@ -37,7 +37,6 @@
     <Compile Include="IFluentLayout.cs" />
     <Compile Include="Margins.cs" />
     <Compile Include="RowSet-WorkInProgress\RowSet.cs" />
-    <Compile Include="UltraTinyIoC.cs" />
     <Compile Include="IViewAndLayoutAttribute.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
