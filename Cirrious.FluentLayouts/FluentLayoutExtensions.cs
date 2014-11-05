@@ -70,18 +70,6 @@ namespace Cirrious.FluentLayouts
 		public static IViewAndLayoutAttribute<T> WithLayoutAttribute<T>(this T view, LayoutAttribute attribute)
         {
 			return new ViewAndLayoutAttribute<T> (view, attribute);
-			/*
-			var viewAndLayoutAttribute = IoC.Create<IViewAndLayoutAttribute<T>> ();
-			viewAndLayoutAttribute.View = view;
-			viewAndLayoutAttribute.Attribute = attribute;
-
-			return viewAndLayoutAttribute;*/
         }
-
-		internal static UltraTinyIoC IoC { get; private set; }
-		static FluentLayoutExtensions()
-		{
-			IoC = new UltraTinyIoC ();
-		}
     }
 }
